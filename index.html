@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@200..700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <nav>
+        <button class="new-game-btn">New Game</button>
+        <button class="reset-btn">Reset Score</button>
+    </nav>
+    <h1>Tic Tac Toe</h1>
+    <h4 class="display-messages"></h4>
+    <div class="game-container">
+        <div class = "player-score-container player-1-score-container">
+            <h2>Player-1 Score</h2>
+            <div class="player-score player-1-score"></div>
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item grid-item-1"></div>
+            <div class="grid-item grid-item-2"></div>
+            <div class="grid-item grid-item-3"></div>
+            <div class="grid-item grid-item-4"></div>
+            <div class="grid-item grid-item-5"></div>
+            <div class="grid-item grid-item-6"></div>
+            <div class="grid-item grid-item-7"></div>
+            <div class="grid-item grid-item-8"></div>
+            <div class="grid-item grid-item-9"></div>
+        </div>
+
+        <div class = "player-score-container player-2-score-container">
+            <h2>Player-2 Score</h2>
+            <div class="player-score player-2-score"></div>
+        </div>
+    </div>
+
+    <div class="total-score-container">
+            Total Score:
+        <div class="wins-container">
+            <div class="player-1-wins">
+                Player-1 Wins : 0               
+            </div>
+            <div class="player-2-wins">
+                0 : Player-2 Wins
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

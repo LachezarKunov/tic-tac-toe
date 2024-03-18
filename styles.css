@@ -1,0 +1,103 @@
+body {
+    margin:0;
+    padding: 0;
+    background-image: url('images/background-image.avif');
+    object-fit: stretch;
+    color:white;
+    font-family: "Ojuju", sans-serif;
+}
+
+nav {
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    gap:10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 12px;
+    font-size:16px;
+}
+
+h1 {
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 52px;
+}
+
+h2,h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.winner-display {
+    height: 25px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.player-container > h2 {
+    margin:0;
+}
+
+.grid-container {
+    width: 420px;
+    height: 420px;
+    display:grid;
+    grid-template-rows: 140px 140px 140px;
+    grid-template-columns: 140px 140px 140px;
+
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid white;
+}
+
+.grid-container >* {
+    height:140px;
+    width:140px;
+    border: 1px solid white;
+    cursor:pointer;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Yaldevi", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 64px;
+}
+
+.player-score {
+    margin-top: 10px;
+    border: 1px solid white;
+    width: 220px;
+    height: 360px;
+}
+
+.total-score-container {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wins-container {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+
+.player-score-game {
+    margin-top: 1px;
+    margin-left: 5px;
+}
