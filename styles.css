@@ -10,6 +10,7 @@ body {
 nav {
     display:flex;
     justify-content: center;
+    align-items: center;
     margin-top:10px;
     gap:10px;
 }
@@ -100,4 +101,51 @@ h2,h4 {
 .player-score-game {
     margin-top: 1px;
     margin-left: 5px;
+}
+
+@media (max-width:600px) 
+{
+    .game-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid-container {
+        width: 210px;
+        height: 210px;
+        display:grid;
+        grid-template-rows: 70px 70px 70px;
+        grid-template-columns: 70px 70px 70px;
+    
+        justify-content: center;
+        align-items: center;
+    
+        border: 1px solid white;
+    }
+    
+    .grid-container >* {
+        height:70px;
+        width:70px;
+        border: 1px solid white;
+        cursor:pointer;
+
+        font-size: 48px;
+    }
+
+    .player-score {
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid white;
+        width: 70px;
+        height: 180px;
+
+        font-size:10px;
+    }
+
+    h2
+    {
+        font-size: 12px;
+    }
 }

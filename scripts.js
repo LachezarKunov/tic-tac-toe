@@ -37,7 +37,7 @@ function drawTurn (element) {
         element.textContent = 'X';
         turn++;
     } else {
-        element.textContent = 'O';
+        element.innerHTML = '&#9711';
         turn++;
     }
 }
